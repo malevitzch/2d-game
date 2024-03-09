@@ -1,2 +1,2 @@
 # 2d-game
-this is clearly a project
+this project uses SFML
