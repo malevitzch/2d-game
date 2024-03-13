@@ -7,6 +7,17 @@ void Game::processEvent(sf::Event event) //todo: replace void with a type that h
   {
     window.close();
   }
+  if(event.type == sf::Event::KeyPressed)
+  {
+    switch(event.key.code) //inside this switch case we handle keycodes... 
+    {
+      case sf::Keyboard::X :
+        window.close();
+        break;
+      default:
+        break;
+    }
+  }
 }
 
 Game::Game() : window(sf::RenderWindow(sf::VideoMode(200, 200), "Game Window")) {}
